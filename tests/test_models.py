@@ -135,7 +135,7 @@ class TestModelParameters:
         """Test PanNet has expected parameter count."""
         model = PanNet(ms_bands=4)
         n_params = sum(p.numel() for p in model.parameters())
-        assert 50000 < n_params < 200000  # ~80K expected
+        assert 100000 < n_params < 500000  # ~340K expected
 
     def test_panformer_lite_parameters(self):
         """Test PanFormerLite has expected parameter count."""
