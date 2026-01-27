@@ -1,0 +1,91 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pansharpening-toolkit"
+version = "1.0.0"
+description = "A comprehensive pansharpening toolkit with classic and deep learning methods"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+keywords = [
+    "pansharpening",
+    "remote-sensing",
+    "image-fusion",
+    "deep-learning",
+    "satellite-imagery",
+    "computer-vision",
+    "pytorch"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "torch>=1.9.0",
+    "torchvision>=0.10.0",
+    "numpy>=1.19.0",
+    "scipy>=1.5.0",
+    "scikit-image>=0.18.0",
+    "rasterio>=1.2.0",
+    "matplotlib>=3.3.0",
+    "tqdm>=4.50.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "flake8>=4.0",
+    "mypy>=0.900",
+]
+
+[project.urls]
+Homepage = "https://github.com/Osman-Geomatics93/pansharpening-toolkit"
+Documentation = "https://github.com/Osman-Geomatics93/pansharpening-toolkit#readme"
+Repository = "https://github.com/Osman-Geomatics93/pansharpening-toolkit"
+Issues = "https://github.com/Osman-Geomatics93/pansharpening-toolkit/issues"
+
+[project.scripts]
+pansharp-train = "run_deep_learning:main"
+pansharp-classic = "run_classic:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["models*", "methods*", "utils*", "configs*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=models --cov=methods --cov=utils"

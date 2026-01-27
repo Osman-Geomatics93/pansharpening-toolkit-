@@ -1,0 +1,38 @@
+name: pansharpening
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python>=3.8
+
+  # Deep Learning
+  - pytorch>=1.9
+  - torchvision>=0.10
+  - cudatoolkit=11.8  # Adjust based on your CUDA version
+
+  # Scientific Computing
+  - numpy>=1.19
+  - scipy>=1.5
+  - scikit-image>=0.18
+
+  # Geospatial
+  - rasterio>=1.2
+  - gdal
+
+  # Visualization
+  - matplotlib>=3.3
+
+  # Utilities
+  - tqdm>=4.50
+  - pillow
+
+  # Optional: Jupyter support
+  - jupyter
+  - ipykernel
+
+  # pip dependencies
+  - pip
+  - pip:
+    - tensorboard  # Optional: for training visualization

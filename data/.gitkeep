@@ -1,0 +1,3 @@
+# Place your satellite images here:
+# - pan.tif: Panchromatic image (1 band, high resolution)
+# - ms.tif: Multispectral image (N bands, low resolution)
