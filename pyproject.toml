@@ -57,10 +57,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Osman-Geomatics93/pansharpening-toolkit"
-Documentation = "https://github.com/Osman-Geomatics93/pansharpening-toolkit#readme"
-Repository = "https://github.com/Osman-Geomatics93/pansharpening-toolkit"
-Issues = "https://github.com/Osman-Geomatics93/pansharpening-toolkit/issues"
+Homepage = "https://github.com/Osman-Geomatics93/pansharpening-toolkit-"
+Documentation = "https://github.com/Osman-Geomatics93/pansharpening-toolkit-#readme"
+Repository = "https://github.com/Osman-Geomatics93/pansharpening-toolkit-"
+Issues = "https://github.com/Osman-Geomatics93/pansharpening-toolkit-/issues"
 
 [project.scripts]
 pansharp-train = "run_deep_learning:main"
