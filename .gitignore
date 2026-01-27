@@ -52,7 +52,7 @@ coverage.xml
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb
+# Keep notebooks/ directory but ignore checkpoints
 
 # IPython
 profile_default/
@@ -105,6 +105,8 @@ results/
 data/*.tif
 data/*.tiff
 data/*.TIF
+data/*.aux
+data/*.enp
 *.pth
 *.pt
 

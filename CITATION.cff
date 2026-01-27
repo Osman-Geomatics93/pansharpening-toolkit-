@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Pansharpening Toolkit"
+abstract: "A comprehensive pansharpening toolkit implementing classic and deep learning methods for satellite image fusion."
+authors:
+  - family-names: "Geomatics"
+    given-names: "Osman"
+    orcid: ""
+version: "1.0.0"
+date-released: "2025-01-28"
+license: MIT
+repository-code: "https://github.com/Osman-Geomatics93/pansharpening-toolkit-"
+keywords:
+  - pansharpening
+  - remote sensing
+  - satellite imagery
+  - deep learning
+  - image fusion
+  - computer vision
