@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  pansharpening:
+    build: .
+    image: pansharpening-toolkit:latest
+    container_name: pansharpening
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./checkpoints:/app/checkpoints
+    command: python run_deep_learning.py --model pannet --epochs 100
+
+  pansharpening-gpu:
+    build: .
+    image: pansharpening-toolkit:latest
+    container_name: pansharpening-gpu
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./checkpoints:/app/checkpoints
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    command: python run_deep_learning.py --model panformer_lite --epochs 100
+
+  jupyter:
+    build: .
+    image: pansharpening-toolkit:latest
+    container_name: pansharpening-jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/app
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''
+
+  jupyter-gpu:
+    build: .
+    image: pansharpening-toolkit:latest
+    container_name: pansharpening-jupyter-gpu
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/app
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''

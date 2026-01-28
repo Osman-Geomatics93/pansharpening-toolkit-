@@ -10,7 +10,7 @@ readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Osman O.A. Ibrahim"}
 ]
 keywords = [
     "pansharpening",
@@ -54,11 +54,17 @@ dev = [
     "isort>=5.0",
     "flake8>=4.0",
     "mypy>=0.900",
+    "pre-commit>=3.0",
+]
+docs = [
+    "mkdocs>=1.5",
+    "mkdocs-material>=9.0",
+    "mkdocstrings[python]>=0.24",
 ]
 
 [project.urls]
 Homepage = "https://github.com/Osman-Geomatics93/pansharpening-toolkit-"
-Documentation = "https://github.com/Osman-Geomatics93/pansharpening-toolkit-#readme"
+Documentation = "https://osman-geomatics93.github.io/pansharpening-toolkit-/"
 Repository = "https://github.com/Osman-Geomatics93/pansharpening-toolkit-"
 Issues = "https://github.com/Osman-Geomatics93/pansharpening-toolkit-/issues"
 
