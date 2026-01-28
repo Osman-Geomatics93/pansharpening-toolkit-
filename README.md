@@ -67,13 +67,13 @@ data/
 
 ```bash
 # Run with default PanNet model
-python run_deep_learning.py --model pannet
+python scripts/run_deep_learning.py --model pannet
 
 # Run with transformer model
-python run_deep_learning.py --model panformer_lite --epochs 100
+python scripts/run_deep_learning.py --model panformer_lite --epochs 100
 
 # Run all classic methods
-python run_classic.py
+python scripts/run_classic.py
 ```
 
 ## Available Models
@@ -106,13 +106,13 @@ python run_classic.py
 
 ```bash
 # Basic training
-python run_deep_learning.py --model pannet_cbam --epochs 100
+python scripts/run_deep_learning.py --model pannet_cbam --epochs 100
 
 # With spectral-focused loss
-python run_deep_learning.py --model panformer_lite --loss spectral_focus --epochs 200
+python scripts/run_deep_learning.py --model panformer_lite --loss spectral_focus --epochs 200
 
 # Custom data paths
-python run_deep_learning.py \
+python scripts/run_deep_learning.py \
     --pan path/to/pan.tif \
     --ms path/to/ms.tif \
     --model mspannet \
@@ -150,8 +150,14 @@ fused = model(ms, pan)
 
 ```
 pansharpening_project/
+├── .github/                   # GitHub templates and workflows
 ├── configs/
 │   └── config.py              # Configuration and hyperparameters
+├── data/                      # Input images
+├── docs/                      # Documentation
+├── methods/
+│   ├── classic/               # Classic pansharpening methods
+│   └── deep_learning/         # Training pipeline
 ├── models/
 │   ├── attention.py           # CBAM, SE, Cross-attention modules
 │   ├── pnn.py                 # PNN model
@@ -162,19 +168,16 @@ pansharpening_project/
 │   ├── panformer.py           # Transformer model
 │   ├── panformer_lite.py      # Lightweight transformer
 │   └── losses.py              # Loss functions
-├── methods/
-│   ├── classic/               # Classic pansharpening methods
-│   └── deep_learning/         # Training pipeline
-├── utils/
-│   ├── data_utils.py          # Data loading and preprocessing
-│   ├── metrics.py             # Quality metrics
-│   └── visualization.py       # Plotting utilities
-├── data/                      # Input images
-├── results/                   # Output results
-├── checkpoints/               # Model weights
-├── run_classic.py             # Run classic methods
-├── run_deep_learning.py       # Train DL models
-└── run_all.py                 # Complete comparison
+├── notebooks/                 # Jupyter notebooks
+├── scripts/
+│   ├── run_classic.py         # Run classic methods
+│   ├── run_deep_learning.py   # Train DL models
+│   └── run_all.py             # Complete comparison
+├── tests/                     # Unit tests
+└── utils/
+    ├── data_utils.py          # Data loading and preprocessing
+    ├── metrics.py             # Quality metrics
+    └── visualization.py       # Plotting utilities
 ```
 
 ## Quality Metrics

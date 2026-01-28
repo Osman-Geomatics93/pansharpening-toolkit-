@@ -91,7 +91,7 @@ This reduces complexity from O(N^2) to O(N * window_size^2).
 ## Example Training
 
 ```bash
-python run_deep_learning.py \
+python scripts/run_deep_learning.py \
     --model panformer_lite \
     --loss spectral_focus \
     --epochs 100 \
