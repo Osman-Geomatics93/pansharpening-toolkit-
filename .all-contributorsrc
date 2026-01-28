@@ -1,0 +1,30 @@
+{
+  "projectName": "pansharpening-toolkit-",
+  "projectOwner": "Osman-Geomatics93",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": ["README.md"],
+  "imageSize": 80,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "Osman-Geomatics93",
+      "name": "Osman O.A. Ibrahim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/Osman-Geomatics93",
+      "profile": "https://github.com/Osman-Geomatics93",
+      "contributions": [
+        "code",
+        "doc",
+        "maintenance",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "badge": {
+    "label": "contributors",
+    "color": "blue"
+  }
+}

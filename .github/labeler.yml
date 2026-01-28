@@ -1,0 +1,84 @@
+# Label configuration for PR Labeler
+
+# Documentation changes
+documentation:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'docs/**/*'
+      - '*.md'
+      - 'mkdocs.yml'
+
+# Model changes
+models:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'models/**/*'
+
+# Method changes
+methods:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'methods/**/*'
+
+# Utility changes
+utils:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'utils/**/*'
+
+# Test changes
+tests:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'tests/**/*'
+      - 'pytest.ini'
+      - 'conftest.py'
+
+# CI/CD changes
+ci:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.github/workflows/**/*'
+      - '.github/actions/**/*'
+
+# Configuration changes
+config:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'configs/**/*'
+      - 'pyproject.toml'
+      - 'setup.py'
+      - 'setup.cfg'
+      - 'requirements*.txt'
+      - 'environment.yml'
+
+# Docker changes
+docker:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'Dockerfile*'
+      - 'docker-compose*.yml'
+      - '.dockerignore'
+
+# Notebook changes
+notebooks:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'notebooks/**/*'
+      - '*.ipynb'
+
+# Scripts changes
+scripts:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'scripts/**/*'
+
+# Dependencies
+dependencies:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'requirements*.txt'
+      - 'pyproject.toml'
+      - 'environment.yml'
+      - 'poetry.lock'
+      - 'Pipfile*'
