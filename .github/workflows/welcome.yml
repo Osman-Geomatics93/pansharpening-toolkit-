@@ -1,0 +1,45 @@
+name: "Welcome New Contributors"
+
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Welcome First-Time Contributors
+      uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: |
+          Hello @${{ github.actor }}! 👋
+
+          Thank you for opening your first issue in the Pansharpening Toolkit! 🎉
+
+          We appreciate you taking the time to report this. Here are a few things to keep in mind:
+
+          - Please make sure you've provided all the necessary information in the issue template
+          - Check if there's an existing issue that addresses your concern
+          - Feel free to ask questions if anything is unclear
+
+          We'll get back to you as soon as possible. Thanks for contributing!
+
+        pr-message: |
+          Hello @${{ github.actor }}! 👋
+
+          Thank you for submitting your first pull request to the Pansharpening Toolkit! 🎉
+
+          We're excited to review your contribution. Here are a few things to keep in mind:
+
+          - Make sure all tests pass (CI will run automatically)
+          - Please follow our code style guidelines
+          - Update documentation if needed
+
+          A maintainer will review your PR soon. Thanks for contributing!

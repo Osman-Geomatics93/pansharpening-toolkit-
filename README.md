@@ -1,14 +1,26 @@
 # Pansharpening Toolkit
 
-[![CI](https://github.com/Osman-Geomatics93/pansharpening-toolkit-/actions/workflows/ci.yml/badge.svg)](https://github.com/Osman-Geomatics93/pansharpening-toolkit-/actions/workflows/ci.yml)
-[![Documentation](https://github.com/Osman-Geomatics93/pansharpening-toolkit-/actions/workflows/docs.yml/badge.svg)](https://osman-geomatics93.github.io/pansharpening-toolkit-/)
-[![codecov](https://codecov.io/gh/Osman-Geomatics93/pansharpening-toolkit-/branch/main/graph/badge.svg)](https://codecov.io/gh/Osman-Geomatics93/pansharpening-toolkit-/)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-ee4c2c.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Osman-Geomatics93/pansharpening-toolkit-/blob/main/notebooks/01_quick_start.ipynb)
-[![Docker](https://img.shields.io/badge/Docker-Available-2496ED.svg?logo=docker)](https://github.com/Osman-Geomatics93/pansharpening-toolkit-/pkgs/container/pansharpening-toolkit)
+<!-- Badges -->
+<p align="center">
+  <a href="https://github.com/Osman-Geomatics93/pansharpening-toolkit-/actions/workflows/ci.yml"><img src="https://github.com/Osman-Geomatics93/pansharpening-toolkit-/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/Osman-Geomatics93/pansharpening-toolkit-/actions/workflows/codeql.yml"><img src="https://github.com/Osman-Geomatics93/pansharpening-toolkit-/actions/workflows/codeql.yml/badge.svg" alt="CodeQL"></a>
+  <a href="https://osman-geomatics93.github.io/pansharpening-toolkit-/"><img src="https://github.com/Osman-Geomatics93/pansharpening-toolkit-/actions/workflows/docs.yml/badge.svg" alt="Documentation"></a>
+  <a href="https://codecov.io/gh/Osman-Geomatics93/pansharpening-toolkit-/"><img src="https://codecov.io/gh/Osman-Geomatics93/pansharpening-toolkit-/branch/main/graph/badge.svg" alt="codecov"></a>
+</p>
+
+<p align="center">
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python 3.8+"></a>
+  <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-1.9+-ee4c2c.svg" alt="PyTorch"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black"></a>
+</p>
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/Osman-Geomatics93/pansharpening-toolkit-/blob/main/notebooks/01_quick_start.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+  <a href="https://mybinder.org/v2/gh/Osman-Geomatics93/pansharpening-toolkit-/main?labpath=notebooks"><img src="https://mybinder.org/badge_logo.svg" alt="Binder"></a>
+  <a href="https://github.com/Osman-Geomatics93/pansharpening-toolkit-/pkgs/container/pansharpening-toolkit"><img src="https://img.shields.io/badge/Docker-Available-2496ED.svg?logo=docker" alt="Docker"></a>
+  <a href="#contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg" alt="All Contributors"></a>
+</p>
 
 A comprehensive pansharpening toolkit implementing both **classic** and **state-of-the-art deep learning** methods for fusing multispectral (MS) and panchromatic (PAN) satellite images.
 
@@ -254,6 +266,26 @@ If you use this toolkit in your research, please cite:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Osman-Geomatics93"><img src="https://avatars.githubusercontent.com/Osman-Geomatics93?v=4?s=80" width="80px;" alt="Osman O.A. Ibrahim"/><br /><sub><b>Osman O.A. Ibrahim</b></sub></a><br /><a href="https://github.com/Osman-Geomatics93/pansharpening-toolkit-/commits?author=Osman-Geomatics93" title="Code">💻</a> <a href="https://github.com/Osman-Geomatics93/pansharpening-toolkit-/commits?author=Osman-Geomatics93" title="Documentation">📖</a> <a href="#maintenance-Osman-Geomatics93" title="Maintenance">🚧</a> <a href="#ideas-Osman-Geomatics93" title="Ideas, Planning, & Feedback">🤔</a></td>
+    </tr>
+  </tbody>
+</table>
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 ## Acknowledgments
 
