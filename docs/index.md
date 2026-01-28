@@ -2,7 +2,7 @@
 
 A comprehensive toolkit implementing both **classic** and **state-of-the-art deep learning** methods for fusing multispectral (MS) and panchromatic (PAN) satellite images.
 
-![Pansharpening Comparison](assets/comparison.png)
+![Pansharpening Comparison](assets/comparison.jpg)
 
 ## Features
 
