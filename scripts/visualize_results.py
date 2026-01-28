@@ -29,8 +29,22 @@ from matplotlib.gridspec import GridSpec
 import matplotlib.patches as mpatches
 
 # Add project root to path
-PROJECT_ROOT = Path(__file__).parent.parent
+try:
+    PROJECT_ROOT = Path(__file__).parent.parent
+except NameError:
+    # Running in Jupyter notebook or interactive environment
+    PROJECT_ROOT = Path.cwd()
+    if PROJECT_ROOT.name == 'notebooks':
+        PROJECT_ROOT = PROJECT_ROOT.parent
+    elif PROJECT_ROOT.name != 'pansharpening_project':
+        # Try to find the project root
+        for parent in [PROJECT_ROOT] + list(PROJECT_ROOT.parents):
+            if (parent / 'data').exists() and (parent / 'models').exists():
+                PROJECT_ROOT = parent
+                break
+
 sys.path.insert(0, str(PROJECT_ROOT))
+print(f"Project root: {PROJECT_ROOT}")
 
 try:
     import rasterio
