@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/Osman-Geomatics93/pansharpening-toolkit-/actions/workflows/ci.yml/badge.svg)](https://github.com/Osman-Geomatics93/pansharpening-toolkit-/actions/workflows/ci.yml)
 [![Documentation](https://github.com/Osman-Geomatics93/pansharpening-toolkit-/actions/workflows/docs.yml/badge.svg)](https://osman-geomatics93.github.io/pansharpening-toolkit-/)
-[![codecov](https://codecov.io/gh/Osman-Geomatics93/pansharpening-toolkit-/branch/main/graph/badge.svg)](https://codecov.io/gh/Osman-Geomatics93/pansharpening-toolkit-)
+[![codecov](https://codecov.io/gh/Osman-Geomatics93/pansharpening-toolkit-/branch/main/graph/badge.svg)](https://codecov.io/gh/Osman-Geomatics93/pansharpening-toolkit-/)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
