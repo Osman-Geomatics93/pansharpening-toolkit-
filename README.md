@@ -231,7 +231,7 @@ If you use this toolkit in your research, please cite:
 @software{pansharpening_toolkit,
   title = {Pansharpening Toolkit: Classic and Deep Learning Methods},
   author = {Ibrahim, Osman O.A.},
-  year = {2025},
+  year = {2026},
   url = {https://github.com/Osman-Geomatics93/pansharpening-toolkit-}
 }
 ```
