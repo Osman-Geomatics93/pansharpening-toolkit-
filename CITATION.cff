@@ -4,8 +4,8 @@ type: software
 title: "Pansharpening Toolkit"
 abstract: "A comprehensive pansharpening toolkit implementing classic and deep learning methods for satellite image fusion."
 authors:
-  - family-names: "Geomatics"
-    given-names: "Osman"
+  - family-names: "Ibrahim"
+    given-names: "Osman O.A."
     orcid: ""
 version: "1.0.0"
 date-released: "2025-01-28"
