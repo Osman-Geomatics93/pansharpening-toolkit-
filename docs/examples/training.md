@@ -5,7 +5,7 @@
 Train PanNet with default settings:
 
 ```bash
-python run_deep_learning.py --model pannet --epochs 100
+python scripts/run_deep_learning.py --model pannet --epochs 100
 ```
 
 ## Advanced Training
@@ -14,13 +14,13 @@ python run_deep_learning.py --model pannet --epochs 100
 
 ```bash
 # Spectral-focused training
-python run_deep_learning.py \
+python scripts/run_deep_learning.py \
     --model panformer_lite \
     --loss spectral_focus \
     --epochs 200
 
 # Spatial-focused training
-python run_deep_learning.py \
+python scripts/run_deep_learning.py \
     --model pannet_cbam \
     --loss spatial_focus \
     --epochs 150
@@ -29,7 +29,7 @@ python run_deep_learning.py \
 ### With Custom Data
 
 ```bash
-python run_deep_learning.py \
+python scripts/run_deep_learning.py \
     --pan path/to/pan.tif \
     --ms path/to/ms.tif \
     --model mspannet \

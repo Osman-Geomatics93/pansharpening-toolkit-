@@ -16,20 +16,20 @@ data/
 
 ```bash
 # Run with default PanNet model
-python run_deep_learning.py --model pannet
+python scripts/run_deep_learning.py --model pannet
 
 # Run with transformer model
-python run_deep_learning.py --model panformer_lite --epochs 100
+python scripts/run_deep_learning.py --model panformer_lite --epochs 100
 
 # With spectral-focused loss
-python run_deep_learning.py --model panformer_lite --loss spectral_focus --epochs 200
+python scripts/run_deep_learning.py --model panformer_lite --loss spectral_focus --epochs 200
 ```
 
 ### Using Classic Methods
 
 ```bash
 # Run all classic methods
-python run_classic.py
+python scripts/run_classic.py
 ```
 
 ## 3. Python API
