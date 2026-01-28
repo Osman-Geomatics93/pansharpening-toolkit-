@@ -102,13 +102,16 @@ Thumbs.db
 # Project specific
 checkpoints/
 results/
-data/*.tif
-data/*.tiff
-data/*.TIF
-data/*.aux
-data/*.enp
 *.pth
 *.pt
+
+# Keep sample data, ignore user data
+# To add your own data, place files in data/ folder (they will be ignored)
+data/*
+!data/.gitkeep
+!data/ms.tif
+!data/pan.tif
+!data/README.md
 
 # Large files
 *.zip
